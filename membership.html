@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Bosinsa ShoppingMall 회원 가입</title>
+    <meta charset="utf-8">
+    <style>
+        div {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 6px;
+        }
+        input[type="text"], input[type="tel"], input[type="email"] , select, input[type="date"],input[type="password"]{
+            width:100%;
+            padding:12px 20px;
+            margin: 10px 0;
+            display:inline-block;
+            border:1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%; 
+        }
+        
+        th, td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+        
+        }
+        
+        input[type="button"] {
+            background-color: skyblue;
+            border: none;
+            color: white;
+            padding: 15px 15px;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.5s;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-left: 900px;        
+        }
+
+        .button1 {
+            background-color: white;
+            color: black; 
+            border: 2px solid skyblue;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 8px 20px 0 rgba(0,0,0,0.19);
+        }
+        
+        .button1:hover {
+            background-color: salmon;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+    <form action=" "> 
+    <h1 style="text-align: center;">&lt;Bosinsa ShoppingMall 회원 가입&gt;</h1>
+    <hr><hr>
+    <fieldset>
+    <legend><h2>회원 정보</h2></legend>
+    <label for="username"><b>이름</b></label>
+    <input id="username" type="text" name="username" placeholder="8자 미만 공백 없이" required>
+    <label for="nation"><b>국가</b></label>
+    <select name="nation" id="nation">
+        <optgroup label="아시아">
+            <option value="대한민국">대한민국</option>
+            <option value="중국">중국</option>
+            <option value="일본">일본</option> </optgroup>
+        
+        <optgroup label="유럽">
+            <option value="프랑스">프랑스</option>
+            <option value="스페인">스페인</option>
+            <option value="독일">독일</option> </optgroup>
+            
+        <optgroup label="북아메리카">
+            <option value="미국">미국</option>
+            <option value="캐나다">캐나다</option>
+            <option value="멕시코">멕시코</option> </optgroup>
+        
+        </select>
+        
+        <label for="gender"><b>성별</b></label><br><br>
+        <label for="man">남자</label>
+        <input id="man" type="radio" value ="m" name="gender">
+        <label for="woman">여자</label>
+        <input id="woman" type="radio" value ="w" name="gender"><br><br>
+
+        <label for="birth"><b>생년월일</b></label><br>
+        <input id="birth" type="date" value="ex ) 2020-01-01"><br><br>
+        
+        <label for="phone"><b>전화번호</b></label>
+        <input id="phone" type="tel" name="phone" placeholder="010-0000-0000" required><br><br>
+        
+        <label for="mail"><b>메일주소</b></label>
+        <input id="email" type="email" placeholder="example@domain.com" required autocomplete="on">
+    </fieldset>
+
+    <fieldset>
+        <legend><h2>원하시는 아이디 , 비밀번호를 입력하세요</h2></legend>
+        <label for="id"><b>아이디</b></label>
+        <input id="id" type="text" name="id" placeholder="5자리 이상 입력하세요" required>
+        <label for="password"><b>비밀번호</b></label></td>
+        <input id="password" type="password" name="id" placeholder="8자리 이상 입력하세요 (특수문자 포함)"></td>
+        <label for="password_re"><b>비밀번호 재확인</b></label>
+        <input id="password_re" type="password" name="id">
+    </fieldset>
+
+    <fieldset>
+        <legend><h2>회원 약관 동의</h2></legend>
+    <table>
+        <tr>
+            <td><input type="checkbox" name="checkbox" value="checkbox"></td>
+            <td>이용약관 동의 (필수)</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="checkbox" value="checkbox"></td>
+            <td>개인정보 수집 및 이용에 대한 안내 (필수)</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="checkbox" value="checkbox"></td>
+            <td>위치정보 이용약관 동의 (선택)</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" name="checkbox" value="checkbox"></td>
+            <td>이벤트 등 프로모션 알림 메일 수신 (선택)</td>
+        </tr>
+    </table>
+    </fieldset>
+    <br>
+    <input class="button button1" type="button" value="회원가입"><br>
+</form>
+</div>
+</body>
+</html>

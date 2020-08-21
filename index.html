@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Bosinsa ShoppingMall</title>
+    <meta charset="utf-8">
+    <style>
+        .title {
+            width: 1865px;
+            height: 100px;
+            color:black;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-bottom: 50px;
+            padding-right: 30px;
+            text-align:right;
+            background-image: linear-gradient(to bottom right, skyblue, yellow);
+            text-shadow: 4px 4px 6px orange;
+            border-radius: 30px;
+            font-size: 1.5em;
+            font-style: italic;
+            font-weight:200; 
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .inform {
+            width:900px;
+            height:50px;
+            background-color: cornflowerblue;
+            color: black;
+            font-size: 20px;
+            padding-top: 13px;
+            padding-left: 10px;
+            border-radius: 30px;
+            margin-left: 530px;
+        }
+        .inform > form {
+            text-align:center;
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .ranking {
+            width: 1885px;
+            height: 30px;
+            color:black;
+            background-color: gold;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-bottom: 80px;
+            text-align: center;
+            border-radius: 50px;
+            animation-name: animate;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes animate {
+            from {background-color: skyblue;}
+            to {background-color: yellow;}
+            }
+        .ranking:hover {
+            color:green;
+        }
+
+        .product {
+            width: 400px;
+            height: 400px;
+            margin:5px;
+            padding: 10px;
+            background-color: cornflowerblue;
+            float: left;
+            margin-left: 40px;
+            margin-top: 20px;
+            text-align: center;
+            border: 2px solid white;
+        }
+
+        .product:nth-child(2n+1) {
+            border-radius: 25px;
+            border-color: white;
+            border-style: dashed;
+            border-width: 3px;
+
+        }
+        .product:nth-child(2n) {
+            border-radius: 25px;
+            border-color:black;
+            border-style: dashed;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%; 
+        }
+        
+        th, td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+        }
+        
+        tr:hover {background-color:#f5f5f5;}
+
+        .button {
+            background-color: skyblue;
+            border: none;
+            color: white;
+            padding: 15px 15px;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.5s;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .button1 {
+            background-color: white;
+            color: black; 
+            border: 2px solid skyblue;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 8px 20px 0 rgba(0,0,0,0.19);
+        }
+        
+        .button1:hover {
+            background-color: #008CBA;
+            color: white;
+        }
+
+        body {
+            background-image: url('image.jpg');
+            background-size: 100% 700px;        
+            background-attachment: fixed;
+            background-repeat: repeat;
+            background-position: 100px 100%;
+            }
+        .title>audio {
+            float: left;
+            padding-top: 40px;
+        }
+        input:enabled { background-color: white;}
+        input:focus { background-color: thistle;}
+
+        #disabled {
+            opacity: 0.8;
+            cursor: not-allowed;
+        }
+
+</style>
+</head>
+<body>
+    <div class="title">
+    <audio src="fakelove.mp3" controls="controls" type="audio/mp3"></audio>
+    <h1>Bosinsa ShoppingMall</h1>
+    </div>
+    <div class="inform">
+        <form method="POST">
+            <small>아이디&nbsp;&nbsp;</small><input type="text" name="text">
+            <small>&nbsp;&nbsp;비밀번호</small>&nbsp;&nbsp;<input type="password" name="password">
+            <input type="submit" value="확인">
+            <a href="membership.html" >&nbsp;회원가입</a>
+        </form>
+    </div>
+    <div class="ranking"><h1>Product Ranking</h1><p style="color: red;"><ins>실시간 업데이트 중...</ins></p></div>
+    
+    <div class="product" style="background-color: darkorange;" style="border-radius: 25px;">
+        <h1>Luxury Brand</h1>
+            <table>
+                <tr>
+                  <th>Rank</th>
+                  <th>Brand Name</th>
+                  <th>Sales</th>
+                </tr>
+                <tr>
+                    <td><strong>1</strong></td>
+                    <td>LOUIS VUITTON</td>
+                    <td>$120000000</td>
+                </tr>
+                <tr>
+                    <td><strong>2</strong></td>
+                    <td>CHANNEL</td>
+                    <td>$93498000</td>
+                </tr>
+                <tr>
+                    <td><strong>3</strong></td>
+                    <td>GUCCI</td>
+                    <td>$78900000</td>
+                </tr>
+                <tr>
+                    <td><strong>4</strong></td>
+                    <td>HERMES</td>
+                    <td>$50392000</td>
+                </tr>
+                <tr>
+                    <td><strong>5</strong></td>
+                    <td>BALENCIAGA</td>
+                    <td>$40392000</td>
+                </tr>
+                <tr>
+                    <td><strong>6</strong></td>
+                    <td>DIOR</td>
+                    <td>$37899000</td>
+                </tr>
+              </table>
+    </div>
+
+    <div class="product" style="background-color: hotpink;" style="border-color: cornflowerblue;">
+        <h1>NEW ARRIVAL  T-SHIRT</h1>
+        <img src="balenciaga-1.jpg" alt="그림이 존재하지 않습니다." width="200px" height="200px">
+        <del><h3>BALENCIAGA T-Shirt ($500) SOLD OUT</h3></del>
+        <button id="disabled" class="button button1" style="background-color: white; color: red;">바로 구매</button>
+    </div>
+    <div class="product" style="background-color: salmon;">
+        <h1>HOT ISSUE HODDIE</h1>
+        <img src="hoddie.jpg" alt="그림이 존재하지 않습니다." width="200px" height="200px">
+        <h3>COVERNET HODDIE ($100)</h3>
+        <button class="button button1">바로 구매</button>
+    </div>
+    <div class="product" style="background-color: skyblue;">       
+        <h1>Sport Brand</h1>
+            <table>
+                <tr>
+                  <th>Rank</th>
+                  <th>Brand Name</th>
+                  <th>Sales</th>
+                </tr>
+                <tr>
+                    <td><strong>1</strong></td>
+                    <td>Nike</td>
+                    <td>$14000000</td>
+                </tr>
+                <tr>
+                    <td><strong>2</strong></td>
+                    <td>Adidas</td>
+                    <td>$8443800</td>
+                </tr>
+                <tr>
+                    <td><strong>3</strong></td>
+                    <td>New Balance</td>
+                    <td>$7130000</td>
+                </tr>
+                <tr>
+                    <td><strong>4</strong></td>
+                    <td>Fuma</td>
+                    <td>$4039200</td>
+                </tr>
+                <tr>
+                    <td><strong>5</strong></td>
+                    <td>Under Armour</td>
+                    <td>$3439200</td>
+                </tr>
+                <tr>
+                    <td><strong>6</strong></td>
+                    <td>Reebok</td>
+                    <td>$2389900</td>
+                </tr>
+              </table>
+    </div>
+    <div class="product" style="background-color: sienna;">
+        <h1>Famous Sneakers</h1>
+        <img src="sneakers.jpg" alt="그림이 존재하지 않습니다." width="200px" height="200px">
+        <h3>Adidas Sneakers 한정판 ($150)</h3>
+        <button class="button button1">바로 구매</button>
+    </div>
+    <div class="product" style="background-color: violet;">
+        <h1>Best Luxury Watch</h1>
+        <img src="rolex.png" alt="그림이 존재하지 않습니다." width="200px" height="200px">
+        <h3>Rolex Watch ($1300)</h3>
+        <button class="button button1">바로 구매</button>
+    </div>
+    <div class="product" style="background-color: yellowgreen;">
+        <h1>Popular Outer</h1>
+        <img src="outer.jpg" alt="그림이 존재하지 않습니다." width="200px" height="200px">
+        <h3>Musinsa Standard Basic Blazer ($120)</h3>
+        <button class="button button1">바로 구매</button>
+    </div>
+    <div class="product" style="background-color: indianred;">
+        <h1>Unique Jeans</h1>
+        <img src="jean.jpg"  alt="그림이 존재하지 않습니다." width="200px" height="200px">
+        <h3>THIS_IS_NEVER_THAT JEAN ($100)</h3>
+        <button class="button button1">바로 구매</button>
+    </div>
+    <div class="product" style="background-color: lightpink;">
+        <h1>Special Glasses</h1>
+        <img src="glasses-1.jpg" alt="그림이 존재하지 않습니다." width="200px" height="200px">
+        <h3>HUGE Glasses ($60)</h3>
+        <button class="button button1">바로 구매</button>
+    </div>
+    <div class="product" style="background-color: rosybrown;">
+        <h1>Nice Cap</h1>
+        <img src="cap.jpg" alt="그림이 존재하지 않습니다." width="200px" height="200px">
+        <h3>Nike Cap ($20)</h3>
+        <button class="button button1">바로 구매</button>
+    </div>
+    <div class="product" style="background-color: lavender;">
+        <h1>Accessories</h1>
+        <img src="belt.jpg" alt="그림이 존재하지 않습니다."  width="200px" height="200px">
+        <h3>MONT BLANC belt ($210)</h3>
+        <button class="button button1">바로 구매</button>
+    </div>
+    <div class="product" style="background-color: darkseagreen;">
+        <h1>Beauty</h1>
+        <img src="beauty.jpg" alt="그림이 존재하지 않습니다." width="200px" height="200px">
+        <h3>SCUDERIA FERRARI Perfume ($260)</h3>
+        <button class="button button1">바로 구매</button>
+    </div>
+</body>
+</html>
