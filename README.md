@@ -1,2 +1,4 @@
-# Shopping-Mall-Site
-2학년 1학기 웹 프로그래밍 중간 프로젝트 
+<div align="center">
+<h2> 🧑🏻‍💻쇼핑몰 사이트🧑🏻‍💻 </h2>
+HTML, CSS, JAVASCRIPT를 사용하여 쇼핑몰 사이트를 구현하였습니다
+</div>
